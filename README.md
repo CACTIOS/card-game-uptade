@@ -6,8 +6,7 @@ A fun and engaging **Memory Card Matching Game** built with **HTML, CSS, and Jav
 
 ## 🔥 Live Demo
 
-Play the game online here:  
-[https://yourusername.github.io/memory-game/](https://yourusername.github.io/memory-game/)
+Play the game online here:  https://cactios.github.io/card-game-uptade/
 
 ---
 
@@ -37,18 +36,6 @@ Play the game online here:
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6+)
-
----
-
-## 📸 Screenshots
-
-![Game Screenshot 1](./screenshots/screenshot1.png)  
-*Game start screen*
-
-![Game Screenshot 2](./screenshots/screenshot2.png)  
-*Leaderboard after a win*
-
-*(Replace with your actual screenshots or GIFs)*
 
 ---
 
