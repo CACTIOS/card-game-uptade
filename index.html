@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Game with Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Memory Game</h1>
+
+  <div id="difficulty-container">
+    <button class="difficulty-btn active" data-level="easy">Easy (4 pairs)</button>
+    <button class="difficulty-btn" data-level="medium">Medium (8 pairs)</button>
+    <button class="difficulty-btn" data-level="hard">Hard (12 pairs)</button>
+  </div>
+
+  <div id="stats">
+    <span>Moves: <span id="moves">0</span></span> |
+    <span>Time: <span id="timer">0:00</span></span>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <div id="game-board"></div>
+
+  <div id="scoreboard-container">
+    <h3>Leaderboard</h3>
+    <table id="scoreboard">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Moves</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div id="win-popup" class="hidden">
+    <h2>You Win!</h2>
+    <p>Moves: <span id="final-moves"></span></p>
+    <p>Time: <span id="final-time"></span></p>
+
+    <label for="nickname-input">Enter your nickname:</label><br />
+    <input
+      type="text"
+      id="nickname-input"
+      maxlength="15"
+      placeholder="Your nickname"
+    /><br />
+    <button id="submit-score-btn">Submit Score</button>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="flip-sound" src="https://assets.codepen.io/3/flip.wav"></audio>
+  <audio id="match-sound" src="https://assets.codepen.io/3/match.wav"></audio>
+  <audio id="win-sound" src="https://assets.codepen.io/3/win.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
